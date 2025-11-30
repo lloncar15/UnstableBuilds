@@ -10,6 +10,19 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* MTG Color Palette */
+  --color-mtg-white: #F0E6D2;
+  --color-mtg-blue: #0E68AB;
+  --color-mtg-black: #150B00;
+  --color-mtg-red: #D3202A;
+  --color-mtg-green: #00733E;
+  --color-mtg-gold: #B8A279;
+
+  /* UI Surface Colors (Dark Theme) */
+  --color-surface: #2D2D2D;
+  --color-border: #4A4A4A;
+  --color-card-table: #1A1A1A;
 }
 
 @media (prefers-color-scheme: dark) {
