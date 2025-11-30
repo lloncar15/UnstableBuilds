@@ -51,33 +51,17 @@ export const SCRYFALL_RATE_LIMIT_MS = 100; // 100ms between requests
 export const SCRYFALL_USER_AGENT = 'MTG-DraftSignpost/1.0';
 
 // Sets that are draftable (core, masters, expansion, draft_innovation)
-// Filtered to sets from DKA (2012-02-03) onwards, excluding non-draftable sets
-// and sets that don't have draft signpost cards (like m15)
+// Sorted by release date (newest first)
+// Note: Unreleased sets will be filtered out by the API based on release_at date
 export const SETS_WITH_DRAFT_SIGNPOSTS = [
-  '2x2', '2xm', 'a25', 'aer', 'afr', 'akh', 'akr',
-  'bbd', 'bfz', 'blb', 'bng', 'bro',
-  'clb', 'cmr', 'cn2', 'cns',
-  'dft', 'dgm', 'dka', 'dmr', 'dmu', 'dom', 'dsk', 'dtk',
-  'ecl', 'eld', 'ema', 'emn', 'eoe',
-  'fdn', 'fin',
-  'grn', 'gtc',
-  'hou',
-  'iko', 'ima', 'inr',
-  'jou',
-  'khm', 'kld', 'klr', 'ktk',
-  'lci', 'ltr',
-  'm19', 'm20', 'm21', 'mh1', 'mh2', 'mh3', 'mid', 'mkm', 'mm2', 'mm3', 'mma', 'mom',
-  'neo',
-  'ogw', 'om1', 'one', 'ori', 'otj',
-  'pio',
-  'rix', 'rna', 'rtr', 'rvr',
-  'sir', 'sis', 'snc', 'soi', 'spm', 'stx',
-  'tdm', 'thb', 'ths', 'tla', 'tmt', 'tpr', 'tsr',
-  'uma',
-  'vma', 'vow',
-  'war', 'woe',
-  'xln',
-  'znr'
+  'tmt', 'ecl', 'tla', 'spm', 'om1', 'eoe', 'fin', 'tdm', 'dft', 'inr', 'pio',
+  'fdn', 'dsk', 'blb', 'mh3', 'otj', 'mkm', 'rvr', 'lci', 'woe', 'ltr', 'mom',
+  'sis', 'sir', 'one', 'dmr', 'bro', 'dmu', '2x2', 'clb', 'snc', 'neo', 'vow',
+  'mid', 'afr', 'mh2', 'stx', 'tsr', 'khm', 'cmr', 'klr', 'znr', 'akr', '2xm',
+  'm21', 'iko', 'thb', 'eld', 'm20', 'mh1', 'war', 'rna', 'uma', 'grn', 'm19',
+  'bbd', 'dom', 'a25', 'rix', 'ima', 'xln', 'hou', 'akh', 'mm3', 'aer', 'kld',
+  'cn2', 'emn', 'ema', 'soi', 'ogw', 'bfz', 'ori', 'mm2', 'tpr', 'dtk', 'ktk',
+  'vma', 'cns', 'jou', 'bng', 'ths', 'mma', 'dgm', 'gtc', 'rtr', 'dka'
 ];
 
 // Draft signpost tagger tag
