@@ -15,7 +15,7 @@ export const ColorPicker: React.FC<ColorPickerProps> = ({
   onChange,
   disabled = false,
 }) => {
-  const [manaSymbols, setManaSymbols] = useState<Record<string, string>>({});
+  const [manaSymbols, setManaSymbols] = useState<Record<string, { color: string; svgUri: string; symbol: string }>>({});
   const [isLoadingSymbols, setIsLoadingSymbols] = useState(true);
 
   useEffect(() => {

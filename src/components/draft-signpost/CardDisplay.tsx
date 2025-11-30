@@ -8,7 +8,7 @@ import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
 export interface CardDisplayProps {
   card: ScryfallCard | null;
   isLoading?: boolean;
-  manaSymbols?: Record<string, string>;
+  manaSymbols?: Record<string, { color: string; svgUri: string; symbol: string }>;
 }
 
 // Card dimensions (Scryfall standard is 488x680)

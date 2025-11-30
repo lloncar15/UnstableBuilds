@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nReorder SETS_WITH_DRAFT_SIGNPOSTS by release date\n\nReorganized the SETS_WITH_DRAFT_SIGNPOSTS array to be sorted by release date (newest first) to match the display order in the dropdown. This makes it easier to:\n- See which sets are newest when looking at the constant\n- Add new sets at the top when they''re released\n- Understand the display order without running the app\n\nSame 83 sets, just reordered. Unreleased sets are still included and will be filtered by the API''s release date check.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

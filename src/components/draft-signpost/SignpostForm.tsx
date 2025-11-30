@@ -19,7 +19,7 @@ export const SignpostForm: React.FC = () => {
   const [card, setCard] = useState<ScryfallCard | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [manaSymbols, setManaSymbols] = useState<Record<string, string>>({});
+  const [manaSymbols, setManaSymbols] = useState<Record<string, { color: string; svgUri: string; symbol: string }>>({});
 
   // Fetch mana symbols on component mount
   useEffect(() => {
